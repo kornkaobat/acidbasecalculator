@@ -82,4 +82,5 @@ int main() {
 			cout << "[pOH]=" << V << '\n';
 			break;
 	}
+	system("pause");
 }
