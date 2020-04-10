@@ -4,7 +4,7 @@ An efficient, easy to use C++ universal Acid-Base Calculator.
 
 ## Getting Started (Normal users)
 
-1. Download this repo latest release and execute ChemAcidBaseCalculator.exe
+1. Download this repo [latest release](https://github.com/kornkaobat/acidbasecalculator/releases/latest) and execute ChemAcidBaseCalculator.exe
 
 ## Getting Started (Development only)
 
