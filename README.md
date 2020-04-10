@@ -2,7 +2,11 @@
 
 An efficient, easy to use C++ universal Acid-Base Calculator.
 
-## Getting Started
+## Getting Started (Normal users)
+
+1. Download this repo latest release and execute ChemAcidBaseCalculator.exe
+
+## Getting Started (Development only)
 
 0. Assuming you have [Git](https://git-scm.com/downloads) installed. If not, then install it to work with git repos.
 ```
