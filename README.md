@@ -1,4 +1,5 @@
 # Acid-Base Universal Calculator
+[![CodeFactor](https://www.codefactor.io/repository/github/kornkaobat/acidbasecalculator/badge/master)](https://www.codefactor.io/repository/github/kornkaobat/acidbasecalculator/overview/master)
 
 An efficient, easy to use C++ universal Acid-Base Calculator.
 
