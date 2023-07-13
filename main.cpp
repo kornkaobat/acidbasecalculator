@@ -1,85 +1,56 @@
 #include <stdio.h>
-#include <math.h>
-#include <iostream>
-#include <string>
-#include <bits/stdc++.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <cmath>
-#include <iomanip>
-#include <ios>
-
-using namespace std;
 
 int main() {
-	cout << "Choose Start point..." << '\n';
-	cout << "1. [H+]\n2. [OH-]\n3. pH\n4. pOH\n";
+	printf("Choose Start point...\n");
+	printf("1. [H+]\n2. [OH-]\n3. pH\n4. pOH\n");
 	int choice;
-	cin >> choice;
+	scanf("%d",&choice);
 	system ("cls");
 	switch(choice)
 	{
 		case 1:
-			cout << "Convert [H+] to Scientific Notation of A*10^B and input A,B\n";
-			system ("pause");
-			cout << '\n';
+			printf("Convert [H+] to Scientific Notation of A*10^B and input A,B\n");
 			double A,B;
-			cout << "A:";
-			cin >> A;
-			cout << '\n';
-			cout << "B:";
-			cin >> B;
-			cout << '\n';
-			cout << "[H+]=" << A*pow(10,B) << '\n';
-			cout << "[OH-]=" << (1/A)*pow(10,((-14)-B)) << '\n'; 
-			cout << "[pH]=" << (-log10(A)-B) << '\n';
-			cout << "[pOH]=" << 14-(-log10(A)-B) << '\n';
+			scanf("%le,%le",&A,&B);
+			printf("\n");
+			printf("[H+]=%le\n",A*pow(10,B));
+			printf("[OH-]=%le\n",(1/A)*pow(10,((-14)-B))); 
+			printf("[pH]=%le\n",(-log10(A)-B));
+			printf("[pOH]=%le\n",14-(-log10(A)-B));
 			break;
 		case 2:
-			cout << "Convert [OH-] to Scientific Notation of Z*10^Y and input Z,Y\n";
-			system ("pause");
-			cout << '\n';
+			printf("Convert [OH-] to Scientific Notation of Z*10^Y and input Z,Y\n");
 			double Z,Y;
-			cout << "Z:";
-			cin >> Z;
-			cout << '\n';
-			cout << "Y:";
-			cin >> Y;
-			cout << '\n';
-			cout << "[H+]=" << (1/Z)*pow(10,((-14)-Y)) << '\n';
-			cout << "[OH-]=" << Z*pow(10,Y) << '\n'; 
-			cout << "[pH]=" << 14-(-log10(Z)-Y) << '\n';
-			cout << "[pOH]=" << (-log10(Z)-Y) << '\n';
+			scanf("%le,%le",&Z,&Y);
+			printf("\n");
+			printf("[H+]=%le\n",(1/Z)*pow(10,((-14)-Y)));
+			printf("[OH-]=%le\n",Z*pow(10,Y)); 
+			printf("[pH]=%le\n",14-(-log10(Z)-Y));
+			printf("[pOH]=%le\n",(-log10(Z)-Y));
 		    break;
 		case 3:
-			cout << "Input pH as X\n";
-			system ("pause");
-			cout << '\n';
-			double X;
-			cout << "X:";
-			cin >> X;
-			double W;
+			printf("Input pH as X\n");
+			double X,W;
+			scanf("%le",&X);
 			W = -X;
-			cout << '\n';
-			cout << "[H+]=" << pow(10,W) << '\n';
-			cout << "[OH-]=" << pow(10,X-14) << '\n'; 
-			cout << "[pH]=" << X << '\n';
-			cout << "[pOH]=" << 14-X << '\n';
+			printf("\n");
+			printf("[H+]=%le\n",pow(10,W));
+			printf("[OH-]=%le\n",pow(10,X-14)); 
+			printf("[pH]=%le\n",X);
+			printf("[pOH]=%le\n",14-X);
 		    break;
 		case 4:
-			cout << "Input pOH as V\n";
-			system ("pause");
-			cout << '\n';
-			double V;
-			cout << "V:";
-			cin >> V;
-			double U;
+			printf("Input pOH as V\n");
+			double V,U;
+			scanf("%le",&V);
 			U = -V;
-			cout << '\n';
-			cout << "[H+]=" << pow(10,V-14) << '\n';
-			cout << "[OH-]=" << pow(10,U) << '\n'; 
-			cout << "[pH]=" << 14-V << '\n';
-			cout << "[pOH]=" << V << '\n';
+			printf("\n");
+			printf("[H+]=%le\n",pow(10,V-14));
+			printf("[OH-]=%le\n",pow(10,U));
+			printf("[pH]=%le\n",14-V);
+			printf("[pOH]=%le\n",V);
 			break;
 	}
 	system("pause");
